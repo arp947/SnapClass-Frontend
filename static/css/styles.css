@@ -269,6 +269,12 @@ h4 {
     font-size: 2.5rem;
 }
 
+.f-icon-box svg {
+    width: 42px;
+    height: 42px;
+    fill: var(--primary);
+}
+
 .feature-card h3 {
     font-size: 1.6rem;
     margin-bottom: 16px;
@@ -298,6 +304,11 @@ h4 {
     margin-bottom: 120px;
 }
 
+/* Alternate flow-step images left/right for clearer sequential flow */
+.flow-step:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 .flow-content {
     flex: 1;
 }
@@ -310,6 +321,15 @@ h4 {
     letter-spacing: 2px;
     margin-bottom: 16px;
     display: block;
+}
+
+.section-tag {
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .flow-content h3 {
@@ -336,6 +356,12 @@ h4 {
     height: auto;
     display: block;
     transition: transform 0.3s ease;
+}
+
+.flow-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flow-image:hover img {
@@ -672,6 +698,11 @@ h4 {
 
     .t-icon {
         margin: 0 auto;
+    }
+
+    .t-icon svg {
+        width: 48px;
+        height: 48px;
     }
 
     .tech-tag {
