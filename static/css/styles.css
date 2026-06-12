@@ -176,36 +176,40 @@ h4 {
     font-weight: 600;
 }
 
-/* Hero image sequence */
-.hero-image-sequence {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 28px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.image-card {
-    flex: 1 1 320px;
-    min-width: 280px;
+/* Floating Cards Simplified */
+.floating-card {
+    position: absolute;
+    width: 320px;
     background-color: #ffffff;
+    padding: 14px;
     border-radius: 36px;
     border: 1px solid #e5e7eb;
     overflow: hidden;
-    box-shadow: 0 22px 60px rgba(15, 23, 42, 0.08);
 }
 
-.image-card img {
+.floating-card img {
     width: 100%;
     height: auto;
-    display: block;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 24px;
     background-color: #f8faff;
 }
+
+.card-label {
+    display: none;
+}
+
+.card-left {
+    left: 40px;
+    top: 50%;
+}
+
+.card-right {
+    right: 40px;
+    bottom: 15%;
+}
+
 
 /* Integrated Logos */
 .integrated {
